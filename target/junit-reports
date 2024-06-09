@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="0.363">
+    <testcase classname="Opencart Application Login" name="Opencart Login" time="0.031">
+        <system-out><![CDATA[Given User navigate to Opencart website.....................................passed
+When User click on MyAccount dropdown.......................................passed
+Then User should see Login and Register buttons.............................passed
+When User click on Login button.............................................passed
+Then User should navigate to Opencart Login page............................passed
+When User enters "Atul" and "1234"..........................................passed
+And User click on Login button..............................................passed
+Then User should navigate to Login success page.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Opencart Application Login" name="Opencart Signup" time="0.03">
+        <system-out><![CDATA[Given User navigate to Opencart website.....................................passed
+When User click on MyAccount dropdown.......................................passed
+Then User should see Login and Register buttons.............................passed
+When User click on Login button.............................................passed
+Then User should navigate to Opencart Login page............................passed
+When User enters "Atul" and "1234"..........................................passed
+And User click on Login button..............................................passed
+Then User should navigate to Login success page.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Opencart Application Login" name="Opencart Registration" time="0.013">
+        <system-out><![CDATA[Given User navigate to Opencart website.....................................passed
+When User enters Test1 and Test2............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Opencart Application Login" name="Opencart Login" time="0.027">
+        <system-out><![CDATA[Given User navigate to Opencart website.....................................passed
+When User click on MyAccount dropdown.......................................passed
+Then User should see Login and Register buttons.............................passed
+When User click on Login button.............................................passed
+Then User should navigate to Opencart Login page............................passed
+When User enters "Atul" and "1234"..........................................passed
+And User click on Login button..............................................passed
+Then User should navigate to Login success page.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Opencart Application Login" name="Opencart SignUp" time="0.005">
+        <system-out><![CDATA[Given User navigate to Opencart website.....................................passed
+When User enters Test1 and Test2............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Opencart Application Login" name="Opencart SignUp 2" time="0.005">
+        <system-out><![CDATA[Given User navigate to Opencart website.....................................passed
+When User enters below details..............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

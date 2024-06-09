@@ -1,0 +1,46 @@
+
+@RegressionTest @SmokeTest @SanityTest
+Scenario: Opencart Login                           [90m# features/OpencartBasics.feature:10[0m
+  [32mGiven [0m[32mUser navigate to Opencart website[0m          [90m# StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()[0m
+  [32mWhen [0m[32mUser click on MyAccount dropdown[0m            [90m# StepDefinition.OpencartLoginStepDefFile.user_click_on_myaccount_dropdown()[0m
+  [32mThen [0m[32mUser should see Login and Register buttons[0m  [90m# StepDefinition.OpencartLoginStepDefFile.user_should_see_login_and_register_buttons()[0m
+  [32mWhen [0m[32mUser click on Login button[0m                  [90m# StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()[0m
+  [32mThen [0m[32mUser should navigate to Opencart Login page[0m [90m# StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_opencart_login_page()[0m
+  [32mWhen [0m[32mUser enters [0m[32m[1m"Atul"[0m[32m and [0m[32m[1m"1234"[0m               [90m# StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mUser click on Login button[0m                   [90m# StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()[0m
+  [32mThen [0m[32mUser should navigate to Login success page[0m  [90m# StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_login_success_page()[0m
+
+@RegressionTest @SmokeTest
+Scenario: Opencart Signup                          [90m# features/OpencartBasics.feature:22[0m
+  [32mGiven [0m[32mUser navigate to Opencart website[0m          [90m# StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()[0m
+  [32mWhen [0m[32mUser click on MyAccount dropdown[0m            [90m# StepDefinition.OpencartLoginStepDefFile.user_click_on_myaccount_dropdown()[0m
+  [32mThen [0m[32mUser should see Login and Register buttons[0m  [90m# StepDefinition.OpencartLoginStepDefFile.user_should_see_login_and_register_buttons()[0m
+  [32mWhen [0m[32mUser click on Login button[0m                  [90m# StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()[0m
+  [32mThen [0m[32mUser should navigate to Opencart Login page[0m [90m# StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_opencart_login_page()[0m
+  [32mWhen [0m[32mUser enters [0m[32m[1m"Atul"[0m[32m and [0m[32m[1m"1234"[0m               [90m# StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mUser click on Login button[0m                   [90m# StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()[0m
+  [32mThen [0m[32mUser should navigate to Login success page[0m  [90m# StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_login_success_page()[0m
+
+@RegressionTest
+Scenario Outline: Opencart Registration   [90m# features/OpencartBasics.feature:41[0m
+  [32mGiven [0m[32mUser navigate to Opencart website[0m [90m# StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()[0m
+  [32mWhen [0m[32mUser enters [0m[32m[1mTest1[0m[32m and [0m[32m[1mTest2[0m        [90m# StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)[0m
+
+@MobileTest
+Scenario: Opencart Login                           [90m# features/OpencartHooks.feature:5[0m
+  [32mGiven [0m[32mUser navigate to Opencart website[0m          [90m# StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()[0m
+  [32mWhen [0m[32mUser click on MyAccount dropdown[0m            [90m# StepDefinition.OpencartLoginStepDefFile.user_click_on_myaccount_dropdown()[0m
+  [32mThen [0m[32mUser should see Login and Register buttons[0m  [90m# StepDefinition.OpencartLoginStepDefFile.user_should_see_login_and_register_buttons()[0m
+  [32mWhen [0m[32mUser click on Login button[0m                  [90m# StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()[0m
+  [32mThen [0m[32mUser should navigate to Opencart Login page[0m [90m# StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_opencart_login_page()[0m
+  [32mWhen [0m[32mUser enters [0m[32m[1m"Atul"[0m[32m and [0m[32m[1m"1234"[0m               [90m# StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)[0m
+  [32mAnd [0m[32mUser click on Login button[0m                   [90m# StepDefinition.OpencartLoginStepDefFile.user_click_on_login_button()[0m
+  [32mThen [0m[32mUser should navigate to Login success page[0m  [90m# StepDefinition.OpencartLoginStepDefFile.user_should_navigate_to_login_success_page()[0m
+
+Scenario Outline: Opencart SignUp         [90m# features/OpencartParameterization.feature:13[0m
+  [32mGiven [0m[32mUser navigate to Opencart website[0m [90m# StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()[0m
+  [32mWhen [0m[32mUser enters [0m[32m[1mTest1[0m[32m and [0m[32m[1mTest2[0m        [90m# StepDefinition.OpencartLoginStepDefFile.user_enters_and(java.lang.String,java.lang.String)[0m
+
+Scenario Outline: Opencart SignUp         [90m# features/OpencartParameterization.feature:15[0m
+  [32mGiven [0m[32mUser navigate to Opencart website[0m [90m# StepDefinition.OpencartLoginStepDefFile.user_navigate_to_opencart_website()[0m
+  [32mWhen [0m[32mUser enters below details[0m          [90m# StepDefinition.OpencartLoginStepDefFile.user_enters_below_details(io.cucumber.datatable.DataTable)[0m
